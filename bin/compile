@@ -101,7 +101,7 @@ if [ -e "$METEOR_DIR/.meteor/meteor" ]; then
   echo "-----> Existing meteor installation found, using it."
 else
   echo "-----> Installing meteor 2.12.0"
-  curl -sS "https://install.meteor.com/?release=2.12.0/" | HOME="$METEOR_DIR" /bin/sh
+  curl -sS "https://install.meteor.com/?release=2.12.0" | HOME="$METEOR_DIR" /bin/sh
 fi
 # Function to execute meteor with proper HOME.
 function METEOR {
